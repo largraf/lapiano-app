@@ -2,30 +2,56 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     max-width: 850px;
     margin: auto;
-    padding: 40px 20px;
+    padding: 28px 20px 40px;
     line-height: 1.7;
     color: #222;
     background: #fafafa;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 52px;
+    font-size: 0.95em;
+}
+
+nav a {
+    margin-left: 18px;
+    color: #444;
+}
+
+.nav-brand {
+    margin-left: 0;
+    font-weight: 700;
+    color: #222;
+}
+
 header {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 54px;
 }
 
 .logo {
     width: 96px;
     height: 96px;
     border-radius: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
+
 .subtitle {
     color: #666;
     font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.hero-detail {
+    color: #444;
+    font-size: 1em;
 }
 
 section {
-    margin-bottom: 40px;
+    margin-bottom: 44px;
 }
 
 h1 {
@@ -41,11 +67,44 @@ ul {
     padding-left: 22px;
 }
 
+.feature-list li {
+    margin-bottom: 4px;
+}
+
+.button-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 16px;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    color: #222;
+    background: #fff;
+}
+
+.button:hover {
+    text-decoration: none;
+    border-color: #777;
+}
+
 footer {
     margin-top: 70px;
     text-align: center;
     color: #777;
     font-size: 0.9em;
+}
+
+footer a {
+    color: #666;
+}
+
+footer span {
+    margin: 0 8px;
+    color: #aaa;
 }
 
 a {
@@ -55,4 +114,19 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 560px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
 }
